@@ -1,0 +1,15 @@
+<form method="post" action="/login">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Jane">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <b>Please solve the below captcha:</b>
+    <br>
+    <img src="{{ captcha_image }}" alt="Captcha image">
+    <br>
+    <label for="captcha">Captcha text:</label>
+    <input type="text" id="captcha" name="captcha" placeholder="Captcha">
+    <input type="submit" value="Login">
+</form>
